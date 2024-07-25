@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.topNav {
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.topNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topNav ul li {
+    float: right;
+}
+
+.topNav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: font-weight 0.3s ease, text-decoration 0.3s ease;
+}
+
+.topNav ul li a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* My Skills Section */
+.mySkills {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mySkills h1 {
+    text-align: left;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexChild {
+    width: 33%;
+    background-color: #888686;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.flexChild:hover {
+    background-color: #DDFFE3;
+}
+
+.flexChild img {
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+
+.flexChild h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.flexChild p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Mobile Media Query */
+@media (max-width: 600px) {
+    .flexContainer {
+        flex-direction: column;
+    }
+    .flexChild {
+        width: 100%; 
+    }
+    .gridContainer {
+        display: grid;
+        grid-template-areas: 
+            "header"
+            "main"
+            "footer"; 
+        grid-template-rows: auto;
+        grid-template-columns: 1fr; 
+    }
+}
